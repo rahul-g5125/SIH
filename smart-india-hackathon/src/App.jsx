@@ -1,11 +1,19 @@
 import React from "react";
-
-import Navbar from "./components/Navbar";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Project from "./pages/Project";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/project/*" element={<Project />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
