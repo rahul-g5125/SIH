@@ -1,0 +1,12 @@
+.container-fluid p {
+  margin: 2%;
+  border: solid 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  padding: 2%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-fluid h1 {
+  margin: 4% 2% 0 2%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

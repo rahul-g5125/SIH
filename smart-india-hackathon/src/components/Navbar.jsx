@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 
-import { Drawer, IconButton, Toolbar, Typography } from "@mui/material";
+import { Drawer, IconButton, Toolbar, Typography, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
@@ -28,9 +28,21 @@ const Navbar = () => {
       <Drawer anchor="left" open={isOpen} onClose={toggleMenu}>
         <div role="presentation" onClick={toggleMenu} onKeyDown={toggleMenu}>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
+            <li>
+              <Button href="/" variant="text">
+                Home
+              </Button>
+            </li>
+            <li>
+              <Button href="/project" variant="text">
+                Project Page
+              </Button>
+            </li>
+            <li>
+              <Button href="/profile" variant="text">
+                Profile Page
+              </Button>
+            </li>
           </ul>
         </div>
       </Drawer>

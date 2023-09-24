@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: left;
+  margin: 2%;
+}
+
+h1 {
+  margin: 2%;
+}

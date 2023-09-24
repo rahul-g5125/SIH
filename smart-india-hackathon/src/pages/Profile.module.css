@@ -1,0 +1,24 @@
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.first-left-section,
+.second-left-section {
+  display: flex;
+}
+
+.profile {
+  display: inline-block;
+}
+
+.profile-info {
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.left-section {
+  width: 400px;
+}
