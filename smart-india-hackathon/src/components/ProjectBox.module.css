@@ -1,0 +1,44 @@
+.main_container{
+    background-color: rgb(211, 211, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gainsboro ;
+    margin: 100px;
+    width: fit-content;
+    padding: 30px;
+}
+
+img{
+    width: 300px;
+    height: 175px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.project_title{
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+}
+
+.project_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.student_name{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    color: gray;
+    margin: 0;
+}
+
+.rating_container{
+    display: flex;
+    align-items: center;
+}
+
+.rating_number{
+    font-family: 'Plus Jakarta Sans', sans-serif;   
+}
