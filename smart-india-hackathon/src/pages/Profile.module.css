@@ -1,3 +1,10 @@
+.profile-main {
+  background-color: #adc6f8;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
 .profile-pic {
   height: 100px;
   width: 100px;
@@ -21,4 +28,8 @@
 
 .left-section {
   width: 400px;
+}
+
+.first-right-section {
+  width: auto;
 }
