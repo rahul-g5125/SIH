@@ -5,9 +5,11 @@ import stock_img1 from "../images/wallpapersden.com_macos-12-monterey-stock-dark
 export default function (){
     return <div className={styles.main_container}>
 
-        <img src={stock_img1} alt="" />
-        <p className={styles.project_title}>Library &nbsp;Management &nbsp;System</p>
-        
+        <div>
+            <img src={stock_img1} alt="" />
+            <p className={styles.project_title}>Library &nbsp;Management &nbsp;System</p>
+        </div>
+
         <div className={styles.project_details}>
 
             <p className={styles.student_name}>by &nbsp;Leslie &nbsp;D'silva</p>
@@ -18,5 +20,6 @@ export default function (){
             </div>
 
         </div>
+        
     </div>
 }
