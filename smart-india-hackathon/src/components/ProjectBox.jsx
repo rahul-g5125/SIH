@@ -3,6 +3,11 @@ import styles from "./ProjectBox.module.css";
 import stock_img1 from "../images/wallpapersden.com_macos-12-monterey-stock-dark_3840x2160.jpg";
 
 export default function ProjectBox() {
+
+  const imageClickHandler = (e)=> {
+    e.view.window.location = "/profile";
+  }
+
   return (
     <div className={styles.main_container}>
       <img className={styles.stock_img} src={stock_img1} alt="" />

@@ -43,6 +43,11 @@ const Navbar = () => {
                 Profile Page
               </Button>
             </li>
+            <li>
+              <Button href="/Community" variant="text">
+                Community Page
+              </Button>
+            </li>
           </ul>
         </div>
       </Drawer>
