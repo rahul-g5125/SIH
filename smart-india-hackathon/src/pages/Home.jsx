@@ -3,17 +3,17 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 
-import ProjectBox from "../components/ProjectBox";
-
-import ProjecSlider from "../components/ProjectSlider";
+import ProjectSlider from "../components/ProjectSlider";
 
 function Home() {
   return (
     <div>
       <Navbar />
       <HeroSection />
-
-      <ProjecSlider />
+      <h1>Recommended</h1>
+      <ProjectSlider />
+      <h1>Trending</h1>
+      <ProjectSlider />
     </div>
   );
 }

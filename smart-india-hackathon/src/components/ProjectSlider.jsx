@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import styles from "./ProjectSlider.module.css";
 import image from "../images/hero-image.jpg";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 export default function ProjectSlider() {
   let slides = [];
@@ -31,22 +31,27 @@ export default function ProjectSlider() {
         navigation={true}
         slidesPerView={5}
         spaceBetween={0}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination, Navigation]}
+        modules={[Navigation]}
         breakpoints={{
           120: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 0,
           },
           640: {
             slidesPerView: 2,
             spaceBetween: 350,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 350,
+            slidesPerView: 2,
+            spaceBetween: 250,
+          },
+          1216: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 25,
           },
         }}
         className="mySwiper"

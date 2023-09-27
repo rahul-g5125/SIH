@@ -12,11 +12,6 @@
   border-radius: 50%;
 }
 
-.first-left-section,
-.second-left-section {
-  display: flex;
-}
-
 .profile {
   display: inline-block;
 }
@@ -29,7 +24,10 @@
 .left-section {
   width: 400px;
 }
+.right-section {
+  width: 1000px;
+}
 
 .first-right-section {
-  width: auto;
+  width: 800px;
 }

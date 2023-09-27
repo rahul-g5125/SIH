@@ -4,6 +4,7 @@ import Tags from "../components/Tags";
 import Certificates from "../components/Certificates";
 import Card from "../components/UI/Card";
 import Socials from "../components/Socials";
+import ProjectSlider from "../components/ProjectSlider";
 
 import profilePhoto from "../images/circle-photo.jpg";
 import styles from "./Profile.module.css";
@@ -66,7 +67,10 @@ function Profile() {
         <div className={styles["right-section"]}>
           <Card>
             <div className={styles["first-right-section"]}>
-              <h2>Projects</h2>
+              <h1>Projects</h1>
+              <ProjectSlider />
+              <h1>Contributions</h1>
+              <ProjectSlider />
             </div>
           </Card>
         </div>
