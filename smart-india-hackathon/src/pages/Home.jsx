@@ -1,20 +1,20 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-import ProjectSlider from "../components/ProjectSlider";
-import '../pages/Home.module.css';
+import  HomeSlider from "../components/HomeSlider";
+import '../pages/Home.css';
 
 function Home() {
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <h1>Recommended</h1>
-      <ProjectSlider />
-      <h1>Top Trending</h1>
-      <ProjectSlider />
-      <h1>Recently Viewed</h1>
-      <ProjectSlider />
+      <h1 className="home-heading">Recommended</h1>
+      <HomeSlider />
+      <h1 className="home-heading">Top &nbsp;Trending</h1>
+      <HomeSlider />
+      <h1 className="home-heading">Recently &nbsp;Viewed</h1>
+      <HomeSlider />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import Authors from "../components/Authors";
 import Navbar from "../components/Navbar";
 import Description from "../components/Description";
-import ProjectSlider from "../components/ProjectSlider";
+import HomeSlider from "../components/HomeSlider";
 import FolderIcon from "@mui/icons-material/Folder";
 import { Button } from "@mui/material";
 import Slider from "react-slick";
@@ -40,7 +40,7 @@ export default function Project() {
         <FolderIcon /> Extra files
       </Button>
       <h1>More Projects like this:</h1>
-      <ProjectSlider />
+      <HomeSlider />
     </>
   );
 }

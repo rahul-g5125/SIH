@@ -1,4 +1,4 @@
-h1{
+.home-heading{
     font-family: 'Plus Jakarta Sans', sans-serif;
     margin-left: 80px;
     margin-top: 170px;
@@ -6,7 +6,7 @@ h1{
 }
 
 @media (max-width:820px) {
-    h1{
+    .home-heading{
         text-align: center;
         margin-left: 0px;
     }

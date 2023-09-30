@@ -20,5 +20,6 @@
 .section p{
     font-size: 16px;
     margin: 0;
-    color: white;        /* #808080 */         
+    color: white;        /* #808080 */ 
+    font-family: 'Plus Jakarta Sans', sans-serif;        
 }
