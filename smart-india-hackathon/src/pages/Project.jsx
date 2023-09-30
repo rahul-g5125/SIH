@@ -1,5 +1,5 @@
 import Authors from "../components/Authors";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Header/Navbar";
 import Description from "../components/Description";
 import ProjectSlider from "../components/ProjectSlider";
 import FolderIcon from "@mui/icons-material/Folder";
