@@ -1,9 +1,8 @@
 import React from "react";
-
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-
 import ProjectSlider from "../components/ProjectSlider";
+import '../pages/Home.module.css';
 
 function Home() {
   return (
@@ -12,7 +11,9 @@ function Home() {
       <HeroSection />
       <h1>Recommended</h1>
       <ProjectSlider />
-      <h1>Trending</h1>
+      <h1>Top Trending</h1>
+      <ProjectSlider />
+      <h1>Recently Viewed</h1>
       <ProjectSlider />
     </div>
   );

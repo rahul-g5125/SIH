@@ -14,7 +14,7 @@ export default function Community(){
     useState("")
     return  (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className={styles.grid_container}>
             <div className={styles.profile_icon}>
                 <center><App_logo img={logo} /></center>
@@ -29,8 +29,18 @@ export default function Community(){
                     <i class="fa fa-search" aria-hidden="true"></i>
                     <input type="text" placeholder="Find communities"/>
                 </div>
+                <Community_Section name="General" />
+                <Community_Section name="Mentor" />
+                <Community_Section name="Project discussion" />
+                <Community_Section name="Announcement" />
             </div>
-            <div className={styles.chat}></div>
+            <div className={styles.chat}>
+                <div className={styles.chat_heading}></div>
+                <div className={styles.chat_box}>
+                    <input type="text" placeholder="Message"/>
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
     </div>
     );

@@ -9,16 +9,16 @@
 }
 
 .section:hover{
-    background-color: #36393e;
+    background-color: #8491dc;   /* #36393e */
 }
 
 .section i{
     font-size: 18px;
-    color:#808080 ;
+    color:white ;        /* #808080 */
 }
 
 .section p{
     font-size: 16px;
     margin: 0;
-    color: #808080;
+    color: white;        /* #808080 */         
 }

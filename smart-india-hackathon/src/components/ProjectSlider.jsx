@@ -1,63 +1,75 @@
 import React from "react";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import stock_img from '../images/landscape.jpg'
+import ProjectBox from '../components/ProjectBox';
+import '../components/ProjectSlider.css';
 
-// Import Swiper styles
-import { Swiper, SwiperSlide } from "swiper/react";
-import ProjectBox from "./ProjectBox";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import styles from "./ProjectSlider.module.css";
-import image from "../images/hero-image.jpg";
-import { Navigation } from "swiper/modules";
-
-export default function ProjectSlider() {
-  let slides = [];
-  for (let index = 0; index < 10; index++) {
-    slides.push(
-      <SwiperSlide>
-        <ProjectBox />
-      </SwiperSlide>
+function Arrowprev(props) {
+    const { onClick } = props;
+    return (  
+        <i onClick={onClick} className="fa-solid fa-less-than fa-xl prev_btn"></i>
     );
-  }
+}
 
-  const slidesComponents = slides.map((item, index) => {
-    return item;
-  });
-  return (
-    <div className={styles.slider}>
-      <Swiper
-        navigation={true}
-        slidesPerView={5}
-        spaceBetween={0}
-        modules={[Navigation]}
-        breakpoints={{
-          120: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 350,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 250,
-          },
-          1216: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-          1440: {
-            slidesPerView: 3,
-            spaceBetween: 25,
-          },
-        }}
-        className="mySwiper"
-      >
-        {slidesComponents}
-      </Swiper>
+function Arrownext(props) {
+    const { onClick } = props;
+    return (
+        <i onClick={onClick} className="fa-solid fa-greater-than fa-xl next_btn"></i>
+    );
+}
+  
+export default function App(){
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: <Arrowprev />,
+        nextArrow: <Arrownext />,
+        responsive: [
+            {
+              breakpoint: 1400, // (desktop)
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1220, // (tablet)
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 820, // (mobile)
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: false,
+                nextArrow: false,
+              },
+            },
+          ],
+      };
+
+    return(
+    <div className="main-container">     
+        <div className="carousel-container">
+            <Slider {...settings}>
+            <ProjectBox img={stock_img}/>
+            <ProjectBox img={stock_img}/>
+            <ProjectBox img={stock_img}/>
+            <ProjectBox img={stock_img}/>
+            <ProjectBox img={stock_img}/>
+            <ProjectBox img={stock_img}/>
+            </Slider>
+        </div>
     </div>
-  );
+    );
 }
