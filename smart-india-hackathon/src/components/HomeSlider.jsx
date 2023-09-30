@@ -3,8 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import stock_img from '../images/landscape.jpg'
-import ProjectBox from '../components/ProjectBox';
-import '../components/ProjectSlider.css';
+import HomeCard from './HomeCard';
+import '../components/HomeSlider.css';
 
 
 function Arrowprev(props) {
@@ -62,12 +62,12 @@ export default function App(){
     <div className="main-container">     
         <div className="carousel-container">
             <Slider {...settings}>
-            <ProjectBox img={stock_img}/>
-            <ProjectBox img={stock_img}/>
-            <ProjectBox img={stock_img}/>
-            <ProjectBox img={stock_img}/>
-            <ProjectBox img={stock_img}/>
-            <ProjectBox img={stock_img}/>
+            <HomeCard img={stock_img}/>
+            <HomeCard img={stock_img}/>
+            <HomeCard img={stock_img}/>
+            <HomeCard img={stock_img}/>
+            <HomeCard img={stock_img}/>
+            <HomeCard img={stock_img}/>
             </Slider>
         </div>
     </div>

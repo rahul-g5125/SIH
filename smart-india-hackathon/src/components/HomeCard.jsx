@@ -1,7 +1,7 @@
 import React from "react";
-import '../components/ProjectBox.css';
+import '../components/HomeCard.css';
 
-export default function ProjectBox(props){
+export default function HomeCard(props){
     return(
     <a className="carousel-item" href="#one!">
 
