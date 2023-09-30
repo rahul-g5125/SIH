@@ -43,13 +43,7 @@ function ResponsiveNavbar() {
           <MenuIcon />
         </IconButton>
 
-        <Box
-          sx={{
-            display: { xs: "none", sm: "inline-block" },
-            margin: "auto",
-            width: "50%",
-          }}
-        >
+        <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
           <Button color="inherit">
             <HomeIcon sx={{ marginRight: 1 }} />
             Home

@@ -2,8 +2,8 @@ import React from "react";
 
 import Navbar from "../components/Header/Navbar";
 import HeroSection from "../components/HeroSection";
-import ProjectSlider from "../components/ProjectSlider";
-import "../pages/Home.module.css";
+import HomeSlider from "../components/HomeSlider";
+import "../pages/Home.css";
 
 function Home() {
   return (

@@ -4,10 +4,10 @@ import Tags from "../components/Tags";
 import Certificates from "../components/Certificates";
 import Card from "../components/UI/Card";
 import Socials from "../components/Socials";
-import ProjectSlider from "../components/ProjectSlider";
+import HomeSlider from "../components/HomeSlider";
 
 import profilePhoto from "../images/circle-photo.jpg";
-import styles from "./Profile.module.css";
+import "./Profile.css";
 
 function Profile() {
   return <h1>Hello World</h1>;
