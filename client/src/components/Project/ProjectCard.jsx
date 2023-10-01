@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/HomeCard.css";
+import "./ProjectCard.css";
 
 export default function HomeCard(props) {
   return (

@@ -1,8 +1,8 @@
-import Authors from "../components/Authors";
+import Authors from "../components/ProjectPage/Authors";
 import Navbar from "../components/Header/Navbar";
-import Description from "../components/Description";
-import HomeSlider from "../components/HomeSlider";
-import FundForm from "../components/FundForm";
+import Description from "../components/ProjectPage/Description";
+import ProjectSlider from "../components/Project/ProjectSlider";
+import FundForm from "../components/ProjectPage/FundForm";
 import FolderIcon from "@mui/icons-material/Folder";
 import { Button, Box, TextField, ButtonGroup } from "@mui/material";
 import Slider from "react-slick";
@@ -53,7 +53,7 @@ export default function Project() {
         </Button>
       </Box>
       <h1>More Projects like this:</h1>
-      <HomeSlider />
+      <ProjectSlider />
       <FundForm />
     </>
   );

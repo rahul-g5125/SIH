@@ -2,9 +2,9 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import stock_img from "../images/landscape.jpg";
-import HomeCard from "./HomeCard";
-import "./HomeSlider.css";
+import stock_img from "../../images/landscape.jpg";
+import HomeCard from "./ProjectCard";
+import "./ProjectSlider.css";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 
@@ -30,7 +30,7 @@ function Arrownext(props) {
   );
 }
 
-export default function App() {
+export default function ProjectSlider() {
   const settings = {
     dots: true,
     infinite: true,
