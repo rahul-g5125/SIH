@@ -1,0 +1,32 @@
+.profile-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.profile-pic {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile {
+  display: inline-block;
+}
+
+.profile-info {
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.left-section {
+  width: 400px;
+}
+.right-section {
+  width: 1000px;
+}
+
+.first-right-section {
+  width: 800px;
+}
