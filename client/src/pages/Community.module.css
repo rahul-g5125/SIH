@@ -102,3 +102,25 @@
     border-top-right-radius: 5px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width:800px) {
+    .grid_container{
+        grid-template-columns: repeat(10,1fr);
+        padding: 15px;
+        padding-left: 0px;
+    }
+
+    .profile_icon{
+        grid-column: span 2;
+        padding : 0px 5px;
+    }
+
+    .communities{
+        grid-column: span 8;
+        border-radius: 10px;
+    }
+
+    .chat{
+        display: none;
+    }
+}

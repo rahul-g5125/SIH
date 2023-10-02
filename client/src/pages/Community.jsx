@@ -30,7 +30,7 @@ export default function Community() {
   };
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.grid_container}>
         <div className={styles.profile_icon}>
           <center>
@@ -72,7 +72,8 @@ export default function Community() {
           <SectionsLoader />
         </div>
 
-        <div className={styles.chat}></div>
+        <div className={styles.chat}>
+        </div>
       </div>
     </div>
   );
