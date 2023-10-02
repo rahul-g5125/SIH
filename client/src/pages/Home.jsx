@@ -1,35 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Navbar from "../components/Header/Navbar";
 import HeroSection from "../components/UI/HeroSection";
 import ProjectSlider from "../components/Project/ProjectSlider";
 import "../pages/Home.css";
-import { TextField, InputAdornment } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Select,
+  MenuItem,
+  TextField,
+  FormControl,
+  InputLabel,
+  OutlinedInput,
+  InputAdornment,
+} from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 function Home() {
+  const [age, setAge] = useState("");
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <TextField
-        id="input-with-icon-textfield"
-        sx={{
-          marginX: "auto",
-          marginTop: -20,
-          width: "50%",
-          display: "flex",
-          borderRadius: 2,
-          backgroundColor: "#fff",
-        }}
-        variant="outlined"
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <SearchIcon />
-            </InputAdornment>
-          ),
-        }}
-      />
+      <div style={{ margin: "auto", width: "60%", marginTop: -180 }}>
+        <Grid container>
+          <Grid item xs={2}>
+            <FormControl fullWidth>
+              <Select
+                sx={{ backgroundColor: "#fff" }}
+                value={age}
+                onChange={handleChange}
+                displayEmpty
+                inputProps={{ "aria-label": "Without label" }}
+              >
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={10}>Ten</MenuItem>
+                <MenuItem value={20}>Twenty</MenuItem>
+                <MenuItem value={30}>Thirty</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={10}>
+            <OutlinedInput
+              sx={{
+                width: "100%",
+                backgroundColor: "#fff",
+              }}
+              startAdornment={
+                <InputAdornment position="start">
+                  <SearchIcon />
+                </InputAdornment>
+              }
+            />
+          </Grid>
+        </Grid>
+      </div>
       <h1 className="home-heading">Recommended</h1>
       <ProjectSlider />
       <h1 className="home-heading">Top &nbsp;Trending</h1>
