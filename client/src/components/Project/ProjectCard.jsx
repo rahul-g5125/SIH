@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard.css";
 
-export default function HomeCard(props) {
+export default function ProjectCard(props) {
   return (
     <a className="carousel-item" href="/project">
       <img src={props.img} alt="" />

@@ -25,7 +25,7 @@ function Home() {
     <div>
       <Navbar />
       <HeroSection />
-      <div style={{ margin: "auto", width: "60%", marginTop: -180 }}>
+      <div className="search-bar">
         <Grid container>
           <Grid item xs={2}>
             <FormControl fullWidth>
