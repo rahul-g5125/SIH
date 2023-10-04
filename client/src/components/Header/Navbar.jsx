@@ -54,9 +54,7 @@ function ResponsiveNavbar() {
 
         <Box
           sx={{
-            display: { sm: "flex", xs: "none" },
-            alignItems: "center",
-            flexGrow: 1,
+            display: { sm: "block", xs: "none" },
           }}
         >
           <Button href="/" color="inherit">

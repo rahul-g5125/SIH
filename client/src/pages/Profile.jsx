@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Tags from "../components/UI/Tags";
 import Certificates from "../components/Profile/Certificates";
 import Card from "../components/UI/Card";
 import Socials from "../components/Profile/Socials";
 import Navbar from "../components/Header/Navbar";
 import ProjectBox from "../components/Project/ProjectCard";
+import PopOverlay from "../components/UI/PopOverlay";
 import profilePhoto from "../images/circle-photo.png";
 import styles from "./Profile.module.css";
-import { Button } from "@mui/material";
 import styled from "styled-components";
+import { Box, Typography } from "@mui/material";
 
 const Underline = styled.hr`
   margin: 10% auto;
@@ -24,32 +25,35 @@ function Profile() {
           <Card>
             <div className={styles["left-section"]}>
               <div className={styles["profile"]}>
-                <div>
+                <Box
+                  sx={{
+                    borderTopLeftRadius: 40,
+                    borderTopRightRadius: 40,
+                    backgroundColor: "#c0c0c0",
+                    height: "150px",
+                  }}
+                ></Box>
+                <div className={styles["profile-pic-box"]}>
                   <img
                     className={styles["profile-pic"]}
                     src={profilePhoto}
                     alt="My Profile Pic"
                   />
                 </div>
-                <div>
-                  <h2>Rahul Gandla</h2>
-                  <h3>T.E. Computer Engineering</h3>
-                  <p>Fr. Conceicao Rodrigues College of Engineering - 2025</p>
-                </div>
-              </div>
-              <Underline />
-              <div>
-                <h2>Bio</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </p>
+                <Box sx={{ textAlign: "center" }}>
+                  <Typography variant="h4" component="h2">
+                    Rahul Gandla
+                  </Typography>
+                  <Typography variant="subtitle1">
+                    T.E. Computer Engineering
+                  </Typography>
+                  <Typography variant="subtitle2">
+                    Fr. Conceicao Rodrigues College of Engineering - 2025
+                  </Typography>
+                  <p>
+                    A Full Stack Web Developer keen to solve real-life problems.
+                  </p>
+                </Box>
               </div>
               <div className={styles["second-left-section"]}></div>
               <Underline />
@@ -70,8 +74,12 @@ function Profile() {
         </div>
         <Card>
           <div className={styles["right-section"]}>
-            <Button sx={{ marginTop: 4, float: "right" }}>See all</Button>
-            <h1>Projects</h1>
+            <Typography
+              variant="h3"
+              sx={{ marginBottom: 5, textAlign: "center" }}
+            >
+              Projects
+            </Typography>
 
             <div className={styles["projects"]}>
               <ProjectBox />
@@ -79,8 +87,11 @@ function Profile() {
               <ProjectBox />
               <ProjectBox />
             </div>
-            <Button sx={{ marginTop: 4, float: "right" }}>See all</Button>
-            <h1>Contributions</h1>
+            <PopOverlay />
+
+            <Typography variant="h3" sx={{ marginY: 5, textAlign: "center" }}>
+              Contributions
+            </Typography>
 
             <div className={styles["projects"]}>
               <ProjectBox />
@@ -88,6 +99,7 @@ function Profile() {
               <ProjectBox />
               <ProjectBox />
             </div>
+            <PopOverlay />
           </div>
         </Card>
       </div>
