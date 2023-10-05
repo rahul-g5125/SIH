@@ -1,0 +1,36 @@
+.review-box {
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 0.02% 1% 1% 1%;
+  background-color: #fff;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.user-name {
+  display: inline-block;
+  opacity: 0.8;
+  margin: 4px 4px 0 0;
+}
+
+.timeline {
+  display: inline-block;
+  opacity: 0.3;
+  font-size: 12px;
+  margin: 0;
+}
+
+.user-tagline {
+  opacity: 0.5;
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.user-review {
+  opacity: 0.5;
+  font-size: 15px;
+  margin: 0;
+}
